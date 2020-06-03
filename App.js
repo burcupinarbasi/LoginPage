@@ -7,7 +7,17 @@
  */
 
 import React from 'react';
-import { SafeAreaView, View, Text, TextInput, TouchableOpacity, StyleSheet, Button, ImageBackground } from 'react-native';
+import {
+  SafeAreaView,
+  View,
+  Text,
+  TextInput,
+  TouchableOpacity,
+  StyleSheet, Button,
+  ImageBackground,
+  
+} from 'react-native';
+
 import CheckBox from 'react-native-check-box';
 
 const color = '#03a9f4';
@@ -31,14 +41,27 @@ const App = () => {
 
         <View style={style.loginScreen}>
           <View style={style.inputSection}>
-            <TextInput autoCapitalize="none" placeholder="Mail" placeholderTextColor={color} style={style.TextInput}></TextInput>
-            <TextInput placeholder="Şifre" placeholderTextColor={color} style={style.TextInput}></TextInput>
+            <TextInput
+              autoCapitalize="none"
+              placeholder="Mail"
+              placeholderTextColor={color}
+              style={style.TextInput}>
+            </TextInput>
+            <TextInput
+              placeholder="Şifre"
+              placeholderTextColor={color}
+              style={style.TextInput}>
+            </TextInput>
           </View>
 
           <View style={style.buttonSection}>
             <View style={style.checkboxSection}>
               <CheckBox
-                isChecked={true} rightText="Beni Hatırla" rightTextStyle={{ color: color }} checkBoxColor={color} style={{ flexGrow: 1 }} />
+                isChecked={true}
+                rightText="Beni Hatırla"
+                rightTextStyle={{ color: color }}
+                checkBoxColor={color}
+                style={{ flexGrow: 1 }} />
               <Text style={{ color: color }}>Şifremi Unuttum</Text>
             </View>
 
@@ -139,7 +162,7 @@ const style = StyleSheet.create({
     borderColor: color,
     marginBottom: 15,
   },
-  
+
   loginButton: {
     width: '100%',
     alignItems: "center",
